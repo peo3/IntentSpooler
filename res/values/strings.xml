@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">Spooled Intents</string>
+    <string name="app_name_list">Intent Spooler</string>
+    <string name="app_name_receiver">Intent Spooler</string>
+    <string name="app_name">Intent Spooler</string>
+    <string name="ok_to_delete">Delete the intent?</string>
+    <string name="copied">Copied</string>
+    <string name="ok_to_save">Save the intent?</string>
+    <string name="ok_to_spool">Spool the intent?</string>
+
+</resources>
