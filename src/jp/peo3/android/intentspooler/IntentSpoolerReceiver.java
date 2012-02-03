@@ -68,7 +68,12 @@ public class IntentSpoolerReceiver extends Activity {
     		while (it.hasNext()) {
     			String key = it.next();
     			addRow("extraKey" + Integer.toString(i), key);
-    			addRow("extraValue" + Integer.toString(i), extras.get(key).toString());
+    			Object val = extras.get(key);
+    			if (val == null) {
+    				addRow("extraValue" + Integer.toString(i), "(null)");
+    			} else {
+    				addRow("extraValue" + Integer.toString(i), val.toString());
+    			}
     			i++;
     		}
     	}
