@@ -155,7 +155,11 @@ public class IntentDatabaseAdapter {
     			} else if (key.contains("TEXT")) {
     				text = extras.get(key).toString();
     			} else {
-    				items.add(extras.get(key).toString());
+    				Object val = extras.get(key);
+    				if (val == null)
+    					items.add("(null)");
+    				else
+    					items.add(val.toString());
     			}
     		}
     		// The order: subject, text, others
